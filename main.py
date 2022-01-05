@@ -54,7 +54,6 @@ def main():
         notices = parse_notice(res.text)
         for notice in notices:
             if notice[2] == cur_date:
-                res = s.get(notice[3])
                 send_notice(notice)
 
 
